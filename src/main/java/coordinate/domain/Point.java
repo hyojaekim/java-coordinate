@@ -9,12 +9,12 @@ public class Point {
     private Point(int x, int y) {
         this.x = x;
         if (x < 0 || x > 24) {
-            throw new IllegalArgumentException();
+            throw new InvalidPositionException("값의 범위가 벗어났습니다.");
         }
 
         this.y = y;
         if (y < 0 || y > 24) {
-            throw new IllegalArgumentException();
+            throw new InvalidPositionException("값의 범위가 벗어났습니다.");
         }
     }
 

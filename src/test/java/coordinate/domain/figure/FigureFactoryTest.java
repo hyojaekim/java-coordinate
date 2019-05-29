@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
 
 public class FigureFactoryTest {
     @Test
-    public void line() {
+    public void line() throws Exception{
         List<Point> points = Arrays.asList(
                 Point.of(1, 2),
                 Point.of(2, 3));
@@ -23,7 +23,7 @@ public class FigureFactoryTest {
     }
 
     @Test
-    public void triangle() {
+    public void triangle() throws Exception{
         List<Point> points = Arrays.asList(
                 Point.of(1, 1),
                 Point.of(4, 1),
@@ -35,7 +35,7 @@ public class FigureFactoryTest {
     }
 
     @Test
-    public void rectangle() {
+    public void rectangle() throws Exception {
         List<Point> points = Arrays.asList(
                 Point.of(1, 1),
                 Point.of(4, 1),
